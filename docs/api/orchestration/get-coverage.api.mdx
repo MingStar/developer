@@ -1,0 +1,40 @@
+---
+id: get-coverage
+title: "Get coverage of particular models"
+description: "Get coverage of particular models"
+sidebar_label: "Get coverage of particular models"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVt1P2zAQ/1csv7BplQpMe+EtFITQNoHo0CahirnJNTV1bGM7YVnV/313TpqGUo2+Ql/qj/v43e/OuVvyIHLPT+74yFTgRA58MuDG4jJIoy8zfsJzCN3lgFvhRAEBHGktucYNyhQmA4W3UuPmsQRX48bBYykdoI3gShhwn86hEPxkyUNtSUs4J0hQBih879xMHyAN5MwRlCAh3lZCldAT88FJnaOYLpUSUwWNo9WAK8hFWhP614QJpciutKo75anw8D3Gg9qgy4LoGZ/dH91/QfXx2a9vxNG22SAD2eSnnTaagtT42mN0rwenQOdh3pOTOkAODgVnxhUiNEefj/kOyNKfFzbUPe2pMQqEfimM0iLLJGVXqOsehJlQHjZx3LRqYyv07yMKprH89uPwpnTpu4hEZu8hCiVqhPMOAlnDeOuR7KuXXN6g8GpCjr012jfhHR8e0l8GPnXSkhWUHZdpCt4jyNRgtDrSJKxVMo2dZvjgSW75skl0JO7G9BrZohISv/dSyYa09Qf9Vi+0eSLWbrUvrTUuYKeiXauhqNsl3fo/n/yfxi3AJd5DSPrekMeneOX3yfXetONVJbOdDuNvsEX9BQSWtg2cmRnDDh5kWirhWGzblBTs6HPTNvvY5Kk++bA6GmK6fFmAG6abGcBDWrrIJ04AiZVfgZYTqoT11ZjS2GRgLbBp+83BNs6RsTU7OAXhwLED9olhv5cZS0qE5uTfWCYsmAVohowZNpOgKGPtCPJMbj2KzLG0kWwiReqZiSBaGkeykkFIduUQKua0sT9qw2XJ9SUawZB9g66KT9waHwoRC7V1uw+7z+LsaAjwJwytEggULZcuzhsN83fkLj6VCCYuN+PZHEGQzHJJo8qtU6sVHTdjF6Ukk55qNutKZwtA9wT5h5t2RvvI+GA3sAXlrhvw2hmMc0p2JZxsRilM/mBNNiFolBJ88zb0tF48eLLS1d7F+Q/M1D++Kahq
+sidebar_class_name: "get api-method"
+info_path: docs/api/orchestration/civitai-orchestration-consumer-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Get coverage of particular models</h1>
+
+<MethodEndpoint method={"get"} path={"/v1/consumer/coverage"}></MethodEndpoint>
+
+
+
+Get coverage of particular models
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"model","in":"query","required":true,"schema":{"type":"array","items":{"type":"object","properties":{"value":{"type":"string","nullable":true},"legacyId":{"type":"string","nullable":true,"readOnly":true},"baseModel":{"enum":["SD_1_5","SDXL"],"type":"string","title":"BaseModel"},"ecosystem":{"type":"object","properties":{"length":{"type":"integer","format":"int32","readOnly":true},"isEmpty":{"type":"boolean","readOnly":true}},"additionalProperties":false,"title":"ReadOnlySpan`1"},"type":{"type":"object","properties":{"length":{"type":"integer","format":"int32","readOnly":true},"isEmpty":{"type":"boolean","readOnly":true}},"additionalProperties":false,"title":"ReadOnlySpan`1"},"source":{"type":"object","properties":{"length":{"type":"integer","format":"int32","readOnly":true},"isEmpty":{"type":"boolean","readOnly":true}},"additionalProperties":false,"title":"ReadOnlySpan`1"},"id":{"type":"object","properties":{"length":{"type":"integer","format":"int32","readOnly":true},"isEmpty":{"type":"boolean","readOnly":true}},"additionalProperties":false,"title":"ReadOnlySpan`1"},"layer":{"type":"object","properties":{"length":{"type":"integer","format":"int32","readOnly":true},"isEmpty":{"type":"boolean","readOnly":true}},"additionalProperties":false,"title":"ReadOnlySpan`1"},"format":{"type":"object","properties":{"length":{"type":"integer","format":"int32","readOnly":true},"isEmpty":{"type":"boolean","readOnly":true}},"additionalProperties":false,"title":"ReadOnlySpan`1"}},"additionalProperties":false,"title":"AIR"}}}}></ParamsItem></ul></div></details><div><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>property name*</strong><span className={"openapi-schema__name"}> ProviderAssetAvailability</span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"availability"} required={false} schemaName={"WorkerAssetAvailability"} qualifierMessage={"**Possible values:** [`Unknown`, `Unsupported`, `Unavailable`, `Available`]"} schema={{"enum":["Unknown","Unsupported","Unavailable","Available"],"type":"string","title":"WorkerAssetAvailability"}}></SchemaItem><SchemaItem collapsible={false} name={"workers"} required={false} schemaName={"int32"} qualifierMessage={undefined} schema={{"type":"integer","format":"int32"}}></SchemaItem></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

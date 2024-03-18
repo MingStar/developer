@@ -1,0 +1,40 @@
+---
+id: get-consumption
+title: "getConsumption"
+description: "getConsumption"
+sidebar_label: "getConsumption"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVMFu2zAM/RVBlx6WIW13yy1Lh6HYYQW6nYIcGItJ1MqWJtHBMsP/PtKKHbvBgGHYyRL1+EQ+PrnRPmAEsr56NHqh90grX6W6DBLSM02wT3qx1uPoZqYDRCiRMMphoyvecHYiiPQAhJxoKw78qDGeeJOKA5agF42mU8jIaKs9n+x8LIE4YjjtPVnmadvZwIiV+Q98XHDEFLgFTJJ0f3srH4OpiDb3tNDPdVFgSsxR+IqwIoFACM4WnT7zlyS45vpyv33BgjgxRFGTbL7FlrDPqzPOMu0e47hKDn241y3r7Ancyica4au63E7hxtdbh4K/SP13IsyYzTmQ7AXFGpmi1/YfCZgBjLEiDbinUec7cAm5I0uCHTvnAQmsSzyRVtKn+l9Zj/118GdTirhAB97Mj3fzosNhPC/6hIRFHS2dOksug/2CstzI+PujZ5ldHkoPGLqHHHhb18qHk7r5iBAxqhv1Th3BWaOWNVcX7a/OG4r8K1aKp+nVzqIzIld28ATX+/iAYHiyIoKtdr4ropfLHi2rpL5GLpUHkvlX547V8umRSY788HJ1xztxQ2DjlNC583wta6amck66Gpom/Enz4IDLYp46OjnLUq+FvHsN3dXDcvgJHDq7rnXTbCHh9+jaVsL5kcoMjE1iGDN44lUEn/wmWMxa6tDy6P+Av/wELuiNbKLNfuQZz3pN5d6ctuT3HGiUdfWYhWVw2edP33ggvwFbRr1D
+sidebar_class_name: "get api-method"
+info_path: docs/api/orchestration/civitai-orchestration-consumer-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>getConsumption</h1>
+
+<MethodEndpoint method={"get"} path={"/v1/consumer/consumption"}></MethodEndpoint>
+
+
+
+getConsumption
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"startDate","in":"query","schema":{"type":"string","format":"date-time"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"endDate","in":"query","schema":{"type":"string","format":"date-time"}}}></ParamsItem></ul></div></details><div><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"images"} required={false} schemaName={"int32"} qualifierMessage={undefined} schema={{"type":"integer","format":"int32"}}></SchemaItem><SchemaItem collapsible={false} name={"totalCost"} required={false} schemaName={"double"} qualifierMessage={undefined} schema={{"type":"number","format":"double"}}></SchemaItem><SchemaItem collapsible={false} name={"startDate"} required={false} schemaName={"date-time"} qualifierMessage={undefined} schema={{"type":"string","format":"date-time","nullable":true}}></SchemaItem><SchemaItem collapsible={false} name={"endDate"} required={false} schemaName={"date-time"} qualifierMessage={undefined} schema={{"type":"string","format":"date-time","nullable":true}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"images\": 0,\n  \"totalCost\": 0,\n  \"startDate\": \"2024-03-13T18:32:53.793Z\",\n  \"endDate\": \"2024-03-13T18:32:53.794Z\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      
