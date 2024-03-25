@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcivitai_developer=self.webpackChunkcivitai_developer||[]).push([[5548],{80159:i=>{i.exports=JSON.parse('{"label":"introudction","permalink":"/docs/tags/introudction","allTagsPath":"/docs/tags","count":1,"items":[{"id":"intro","title":"Introudction","description":"Let\'s discover Docusaurus in less than 5 minutes.","permalink":"/docs/intro"}]}')}}]);
