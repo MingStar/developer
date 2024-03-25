@@ -15,9 +15,10 @@ const config = {
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "civitai", // Usually your GitHub org/user name.
-  projectName: "civitai-developer", // Usually your repo name.
+  organizationName: "civitai",
+  projectName: "developer",
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
 
   presets: [
     [
