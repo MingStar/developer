@@ -13,7 +13,7 @@ _API key management section in profile._
 
 ## Turn on AI Resource Identifier
 
-Also within the Account settings is a section called "Browsing settings". Within these settings we want to toggle on the [AI Resource Identifier](/docs/air). In next section we will cover how to use this for image generation.
+Also within the Account settings is a section called "Browsing settings". Within these settings we want to toggle on the [AI Resource Identifier](/docs/getting-started/ai-resource-identifier). In next section we will cover how to use this for image generation.
 
 ![Browsing settings AIR toggle](./air-toggle.png "Browsing settings AIR toggle")
 _Browsing settings toggles for AIR_
