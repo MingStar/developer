@@ -154,11 +154,25 @@ const config = {
       "docusaurus-plugin-remote-content",
       {
         // options here
-        name: "some-content", // used by CLI, must be path safe
+        name: "javascript-sdk", // used by CLI, must be path safe
         sourceBaseUrl:
           "https://raw.githubusercontent.com/civitai/civitai-javascript/master/", // the base url for the markdown (gets prepended to all of the documents when fetching)
         outDir: "docs/api/sdk", // the base directory to output to.
         documents: ["README.md"], // the file names to download
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+              content: `---
+title: JavaScript SDK
+---
+${content}
+              `,
+            };
+          }
+
+          // we don't want to modify this item, since it doesn't contain "README" in the name
+          return undefined;
+        },
       },
     ],
   ],
