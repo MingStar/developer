@@ -68,7 +68,7 @@ const config = {
           {
             label: "API",
             position: "left",
-            to: "/docs/api/intro",
+            to: "/docs/category/api",
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
@@ -110,10 +110,10 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
               {
                 label: "GitHub",
                 href: "https://github.com/civitai",

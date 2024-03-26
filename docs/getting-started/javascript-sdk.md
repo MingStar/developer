@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # JavaScript SDK
 
+Currently the JavaScript SDK is utilized for image generation. If you are looking for other information such as your user, searching models, etc. please refer to our [Public REST API](/docs/api/public-rest)
+
 ## Installation
 
 ```bash

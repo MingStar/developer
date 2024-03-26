@@ -4,46 +4,24 @@ tags:
   - introudction
 ---
 
-# Introudction
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**Civitai** is a labor of love from a small team. After being inspired daily by the incredible progress of the Stable Diffusion community and the explosion of custom fine-tuned models, textual inversions, and more, we wanted to see if we could create something that would continue to help the community grow and thrive.
 
-## Getting Started
+After seeing a gap around sharing the custom models that were being made by the community, we decided to try our hand a putting together a tool that would make it easy for anyone to share, find, and review models. While there were existing services like HuggingFace that allowed users to expose their models as repositories, we felt that it was missing a few key features that would really allow it to serve as a home for the growing community and use case:
 
-Get started by **creating a new site**.
+- A way for creators to tag models with things that make sense to the SD community
+- A good way for people interested in the model to review and share their creations
+- A simpler upload and download interface (how many of us are really familiar with code repos)
+- An indexed and visual browsing experience of all the models available
+- An API that can be used by SD tools to tap into the growing library of models, embeds, aesthetic gradients, and hyper networks available
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+We hope you'll appreciate what we've put together and we look forward to hearing what you think of the tool ❤️
 
-### What you'll need
+## Our Core Team
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- [Justin Maier](https://github.com/JustMaier) - Project Lead, full-stack dev
+- [Briant Diehl](https://github.com/bkdiehl) - Full-stack dev
+- [Manuel Urenah](https://github.com/manuelurenah) - Full-stack dev
+- [Max Hulker](https://github.com/maxhulker) - Community manager
+- [Koen Bekkenutte](https://github.com/koenbeuk) - Dev-ops
