@@ -14,8 +14,7 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">
           <b>Civitai</b> is an open-source, free-to-use site dedicated to
-          sharing and rating Stable Diffusion models, textual inversion,
-          aesthetic gradients, and hypernetworks.
+          sharing and rating Stable Diffusion models, LoRAs and ControlNets.
         </p>
         <div className={styles.buttons}>
           <Link
@@ -36,8 +35,7 @@ export default function Home() {
     <Layout
       title="Welcome to Civitai"
       description="Civitai is an open-source, free-to-use site dedicated to
-      sharing and rating Stable Diffusion models, textual inversion,
-      aesthetic gradients, and hypernetworks."
+      sharing and rating Stable Diffusion models, LoRAs and ControlNets."
     >
       <HomepageHeader />
       {/* <main>
