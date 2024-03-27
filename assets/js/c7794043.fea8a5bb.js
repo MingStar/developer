@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcivitai_developer=self.webpackChunkcivitai_developer||[]).push([[6639],{17351:e=>{e.exports=JSON.parse('{"label":"setup","permalink":"/docs/tags/setup","allTagsPath":"/docs/tags","count":1,"items":[{"id":"getting-started/setup-profile","title":"Setting Up","description":"Create an API key","permalink":"/docs/getting-started/setup-profile"}]}')}}]);
