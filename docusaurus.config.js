@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Civitai | Developer Portal",
   tagline: "Documentation for Civitai APIs for use in your applications",
-  url: "https://developer.civitai.com",
+  url: "https://civitai.github.io",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
