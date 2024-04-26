@@ -157,13 +157,40 @@ const config = {
         name: "javascript-sdk", // used by CLI, must be path safe
         sourceBaseUrl:
           "https://raw.githubusercontent.com/civitai/civitai-javascript/master/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs/api/sdk", // the base directory to output to.
+        outDir: "docs/api", // the base directory to output to.
         documents: ["README.md"], // the file names to download
         modifyContent(filename, content) {
           if (filename.includes("README")) {
             return {
+              filename: "javascript-sdk.md",
               content: `---
 title: JavaScript SDK
+---
+${content}
+              `,
+            };
+          }
+
+          // we don't want to modify this item, since it doesn't contain "README" in the name
+          return undefined;
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        // options here
+        name: "python-sdk", // used by CLI, must be path safe
+        sourceBaseUrl:
+          "https://raw.githubusercontent.com/civitai/civitai-python/master/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+        outDir: "docs/api", // the base directory to output to.
+        documents: ["README.md"], // the file names to download
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+              filename: "python-sdk.md",
+              content: `---
+title: Python SDK
 ---
 ${content}
               `,
