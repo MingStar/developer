@@ -202,6 +202,32 @@ ${content}
         },
       },
     ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        // options here
+        name: "post-intent-system", // used by CLI, must be path safe
+        sourceBaseUrl:
+          "https://raw.githubusercontent.com/wiki/civitai/civitai/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+        outDir: "docs", // the base directory to output to.
+        documents: ["Post-Intent-System.md"], // the file names to download
+        modifyContent(filename, content) {
+          if (filename.includes("Post-Intent-System")) {
+            return {
+              filename: "post-intenet-system.md",
+              content: `---
+title: Post Intent System
+---
+${content}
+              `,
+            };
+          }
+
+          // we don't want to modify this item, since it doesn't contain "README" in the name
+          return undefined;
+        },
+      },
+    ],
   ],
 
   themes: ["docusaurus-theme-openapi-docs"],
