@@ -214,7 +214,7 @@ ${content}
         modifyContent(filename, content) {
           if (filename.includes("Post-Intent-System")) {
             return {
-              filename: "post-intenet-system.md",
+              filename: "post-intent-system.md",
               content: `---
 title: Post Intent System
 ---
