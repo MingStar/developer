@@ -210,7 +210,7 @@ ${content}
         sourceBaseUrl:
           "https://raw.githubusercontent.com/wiki/civitai/civitai/", // the base url for the markdown (gets prepended to all of the documents when fetching)
         outDir: "docs", // the base directory to output to.
-        documents: ["Post-Intent-System.md"], // the file names to download
+        documents: ["Post-Intent-System.md", "Diffusion-Partner-Program.md"], // the file names to download
         modifyContent(filename, content) {
           if (filename.includes("Post-Intent-System")) {
             return {
@@ -218,6 +218,63 @@ ${content}
               content: `---
 title: Post Intent System
 ---
+${content}
+              `,
+            };
+          }
+
+          if (filename.includes("Diffusion-Partner-Program")) {
+            return {
+              filename: "diffusion-partner-program.md",
+              content: `---
+sidebar_position: 5
+title: Diffusion Partner Program
+---
+${content}
+              `,
+            };
+          }
+
+          if (filename.includes("Civitai-Link-Integration")) {
+            return {
+              filename: "link.md",
+              content: `---
+sidebar_position: 3
+title: Link
+tags:
+  - link
+  - models
+---
+${content}
+              `,
+            };
+          }
+
+          // we don't want to modify this item, since it doesn't contain "README" in the name
+          return undefined;
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        // options here
+        name: "public-rest", // used by CLI, must be path safe
+        sourceBaseUrl:
+          "https://raw.githubusercontent.com/wiki/civitai/civitai/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+        outDir: "docs/api", // the base directory to output to.
+        documents: ["REST-API-Reference.md"], // the file names to download
+        modifyContent(filename, content) {
+          if (filename.includes("REST-API-Reference")) {
+            return {
+              filename: "public-rest.mdx",
+              content: `---
+sidebar_position: 1
+title: Public REST API
+tags:
+  - rest
+---
+
 ${content}
               `,
             };
